@@ -1,0 +1,86 @@
+########################################
+# AURIXA .gitignore
+########################################
+
+# ===== Secrets =====
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+# Sensitive SQL
+01_create_user.sql
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+/build/
+/dist/
+/lib/
+/lib64/
+/wheels/
+*.egg-info/
+
+venv/
+.venv/
+env/
+ENV/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== Flutter =====
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+
+android/.gradle/
+android/app/build/
+
+ios/Pods/
+ios/Flutter/Flutter.podspec
+
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugin_registrant.h
+windows/flutter/generated_plugins.cmake
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.iml
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+
+# ===== Databases =====
+*.db
+*.sqlite3
+
+# ===== Temporary =====
+*.tmp
+*.temp
+
+Structure.txt
+setup.bat
+
+backend/test_*.py
+frontend/test/

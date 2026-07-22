@@ -1,0 +1,31 @@
+name: aurixa
+description: AURIXA - Intelligent Digital Expense Governance Platform
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  dio: ^5.4.0
+  shared_preferences: ^2.2.3
+  go_router: ^14.0.0
+  intl: ^0.19.0
+  fl_chart: ^0.68.0
+
+  # NEW — Phase 1 UI Enhancement: required for the chrome-less, small,
+  # centered splash/auth window (no minimize/maximize/close) and the
+  # animated resize from splash size -> auth size. See main.dart.
+  window_manager: ^0.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
